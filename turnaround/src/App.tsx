@@ -45,6 +45,7 @@ function App() {
     setLoading(!loading)
     setTotalCashIn(totalCashIn + 10)
     calculateWinningChance()
+    generateString(3)
 
     let drawnNumber = Math.floor(Math.random() * 100)
 
@@ -97,7 +98,7 @@ function App() {
     </div>
   )
 
-  function ExampleCounter() {
+  /*function ExampleCounter() {
     const speed = 100
 
     useEffect(() => {
@@ -109,11 +110,10 @@ function App() {
     }, [])
 
     return <div></div>
-  }
+  }*/
 
   return (
     <div>
-      {loading ? <ExampleCounter /> : null}
       <div className="main-container">
         <div className="game-screen">
           <div className="slots">
