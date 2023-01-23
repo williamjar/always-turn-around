@@ -45,6 +45,7 @@ func NewHandler(conf *Config) *Handler {
 	h.e.Use(Cors())
 
 	NewAuthHandler(h.e, conf.DB, conf.JwtUtil)
+	NewGameHandler(h.e, conf.DB, conf.JwtUtil)
 
 	h.e.GET("/api/health", func(c *gin.Context) {
 		c.JSON(http.StatusOK, gin.H{"status": "ok"})
@@ -59,16 +60,19 @@ func (h *Handler) Run(address string) error {
 		Handler: h.e,
 	}
 
+	quit := make(chan os.Signal)
+
 	go func() {
 		if err := srv.ListenAndServe(); err != nil && err != http.ErrServerClosed {
 			fmt.Println("ERROR:", err)
+			quit <- nil
 		}
 	}()
 
-	quit := make(chan os.Signal)
 	signal.Notify(quit, syscall.SIGINT, syscall.SIGTERM)
 	<-quit
 
+	fmt.Println("shutting down")
 	return srv.Shutdown(context.Background())
 }
 

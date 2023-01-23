@@ -3,9 +3,7 @@ package main
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/williamjar/always-turn-around/database"
 	"github.com/williamjar/always-turn-around/handler"
-	"github.com/williamjar/always-turn-around/services"
 	"os"
 )
 
@@ -25,21 +23,22 @@ func main() {
 	}
 
 	// dependencies
-	db, err := database.NewJsonDatabase("./data.json")
-	if err != nil {
-		panic(err)
-	}
-	defer func(db *database.JsonDB) {
-		err := db.Close()
+	/*
+		db, err := database.NewJsonDatabase("./data.json")
 		if err != nil {
-			fmt.Println(err)
+			panic(err)
 		}
-	}(db)
+		defer func(db *database.JsonDB) {
+			err := db.Close()
+			if err != nil {
+				fmt.Println(err)
+			}
+		}(db)
 
-	jwtUtil := services.NewJWTUtil(config.JWTKey)
-
+		jwtUtil := services.NewJWTUtil(config.JWTKey)
+	*/
 	// server
-	h := handler.NewHandler(&handler.Config{JwtUtil: jwtUtil, DB: db})
+	h := handler.NewHandler(&handler.Config{JwtUtil: nil, DB: nil})
 
 	// run server
 	// this will block
