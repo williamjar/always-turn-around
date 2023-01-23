@@ -44,79 +44,54 @@ p {
 
 .top-container {
   align-self: center;
-  margin: 100px;
-}
-
-.bottom-container {
-  align-self: center;
-  margin: 100px;
-  
-  
 }
 
 .game-screen {
-  margin: 100px;
-  align-self: center;
-  height: 600px;
-  width: 800px;
+  margin:5%;
   background-color: rgb(41, 41, 41);
   box-shadow: 5px 5px 10px 2px rgba(0,0,0,.8);
-  border-radius: 10px;
-  border: 20px solid rgb(0, 0, 0);
-  
+  border-radius: 5px;
+  border: 10px solid rgb(0, 0, 0);
 }
 
 .game-message {
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-end;
+  margin:2%;
+  padding:2%;
+  border-radius: 5px;
 }
 
 .credit-box {
-  width: 100px;
+  margin:2%;
+  padding: 5%;
   background-color: rgb(0, 83, 51);
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 .slot-text {
-  font-size: 100px;
+  font-size: 10rem;
   color:rgb(168, 168, 168);
   text-align: center;
 }
 
 .actions-box {
-  width: 200px;
-  height: 200px;
   background-color: rgb(0, 0, 0);
-  border-radius: 10px;
+  border-radius: 10%;
 }
 
 .slots {
+  margin:2%;
   display:flex;
   justify-content: center;
 }
 
 .slot {
-  margin: 60px;
-  height: 200px;
-  width: 170px;
+  margin:2%;
+  width: 25%;
+  height:25%;
   background-color: rgb(0, 42, 49);
   border-radius: 10px;
   box-shadow: inset 0 0 10px #000000;
-
 }
-
-.loader {
-  width: 48px;
-  height: 48px;
-  border: 5px solid #FFF;
-  border-bottom-color: transparent;
-  border-radius: 50%;
-  display: inline-block;
-  box-sizing: border-box;
-  animation: rotation 1s linear infinite;
-  }
-
 
 .main-container {
   display:flex;
