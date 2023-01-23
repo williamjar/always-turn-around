@@ -114,43 +114,54 @@ function App() {
 
   return (
     <div>
+      <header>
+        <button className='nav-button'>
+          <svg height="24px" viewBox="0 0 24 24" fill="none">
+          <path d="M21.008 16c.537 0 .992.447.992.999v1.002a.992.992 0 01-.992.999H2.992C2.455 19 2 18.553 2 18.001v-1.002c0-.556.444-.999.992-.999h18.016zm0-6c.537 0 .992.447.992.999v1.002a.992.992 0 01-.992.999H2.992C2.455 13 2 12.553 2 12.001v-1.002c0-.556.444-.999.992-.999h18.016zm0-6c.537 0 .992.447.992.999v1.002a.992.992 0 01-.992.999H2.992C2.455 7 2 6.553 2 6.001V4.999C2 4.443 2.444 4 2.992 4h18.016z" fill="currentColor">
+          </path></svg>
+        </button>
+        <h2 className="site-title">It Can Always Turn Around</h2>
+        <button className ="login-button">Logg Inn</button>
+      </header>
       <div className="main-container">
-        <div className="game-screen">
-          <div className="slots">
-            <div className="slot">
-              <div className="slot-text">{slotString[0]}</div>
+        <div className="side-spacer"></div>    
+        <div className="game-container">
+          <div className="game-screen">
+            <div className="slots">
+              <div className="slot">
+                <div className="slot-text">{slotString[0]}</div>
+              </div>
+              <div className="slot">
+                {' '}
+                <div className="slot-text">{slotString[1]}</div>
+              </div>
+              <div className="slot">
+                {' '}
+                <div className="slot-text">{slotString[2]}</div>
+              </div>
             </div>
-            <div className="slot">
-              {' '}
-              <div className="slot-text">{slotString[1]}</div>
-            </div>
-            <div className="slot">
-              {' '}
-              <div className="slot-text">{slotString[2]}</div>
+            <div className="game-message">
+              <div className="credit-box">
+                <h1>{tokens}</h1>
+              </div>
+              <div className="actions-box">
+                {messageFeed.map((t, index) => (
+                  <p>{t}</p>
+                ))}
+              </div>
             </div>
           </div>
-          <div className="game-message">
-            <div className="credit-box">
-              <h1>{tokens}</h1>
-            </div>
-            <div className="actions-box">
-              {messageFeed.map((t, index) => (
-                <p>{t}</p>
-              ))}
-            </div>
-          </div>
-        </div>
-        <div className="top-container">
-          <div className="showcasearea"></div>
-
-          <div className="bottom-container">
+          <div className="button-container">
+            <div className="side-spacer"></div>
             <div className="bandit">
               <button className="drawbutton" onClick={drawNumber}>
                 SPIN
               </button>
             </div>
+            <div className="side-spacer"></div>
           </div>
         </div>
+        <div className="side-spacer"></div>
       </div>
     </div>
   )
