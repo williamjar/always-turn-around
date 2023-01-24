@@ -1,15 +1,19 @@
 .btn {
     position: relative;
     display: inline-block;
-    border: 1px solid rgb(30, 144, 255);
-    border-radius: 5px;
+    width: 7rem;
+    height: 2.5rem;
     padding: .25em .5em;
+    margin: 1.5rem;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    color: white;
+    background-color:#1a2c38;
     cursor: pointer;
-
     transition: .25s;
 }
 
 .btn:hover{
-    border-color:rgb(71, 163, 255);
-    background-color:rgb(0, 33, 66);
+    border-color:#284457;
+    background-color:#1e3341;
 }
