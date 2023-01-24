@@ -1,18 +1,18 @@
-import React from "react";
+import React, {useState} from "react";
 import {SlotControls} from "./SlotControls";
 import {SlotReel} from "./SlotReel";
 
-export class Slot extends React.Component<any, any>{
-    render() {
-        return (
-            <div className={'slot'}>
-                <div className={'slotDisplay'}>
-                    <SlotReel/>
-                    <SlotReel/>
-                    <SlotReel/>
-                </div>
-                <SlotControls />
+export const Slot = () => {
+    const [reels, setReels] = useState([0,0,0])
+
+    return (
+        <div className={'slot'}>
+            <div className={'slotDisplay'}>
+                <SlotReel/>
+                <SlotReel/>
+                <SlotReel/>
             </div>
-        );
-    }
+            <SlotControls />
+        </div>
+    );
 }

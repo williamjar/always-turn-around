@@ -5,10 +5,8 @@ type Props = {
     text: string
 }
 
-export class Button extends React.Component<Props, any>{
-    render() {
-        return (
-            <button className={styles.btn}>{this.props.text}</button>
-        )
-    }
+export const Button = ({text}: Props) => {
+    return (
+        <button className={styles.btn}>{text}</button>
+    )
 }
