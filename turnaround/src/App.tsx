@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import './App.css'
+import {Button} from "./components/Button";
 
 function App() {
   const payOutRate = 0.95
@@ -121,7 +122,7 @@ function App() {
           </path></svg>
         </button>
         <h2 className="site-title">It Can Always Turn Around</h2>
-        <button className ="login-button">Logg Inn</button>
+        <Button text={"Logg inn"}/>
       </header>
       <div className="main-container">
         <div className="side-spacer"></div>    
