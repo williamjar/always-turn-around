@@ -45,7 +45,8 @@ p {
   margin-top: 50px;
   height: 70rem;
   background-color: #132029;
-  border: 0.3rem solid black;
+  box-shadow: 0 0 10px black;
+  
 }
 
 .game-screen {
