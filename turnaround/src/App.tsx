@@ -113,6 +113,19 @@ function App() {
     return <div></div>
   }*/
 
+  const keySpin = (e: KeyboardEvent) => {
+    if(e.code !== 'Space') return;
+    e.preventDefault()
+    drawNumber()
+  }
+
+  useEffect(() => {
+    document.addEventListener('keypress', keySpin)
+    return function cleanup(){
+      document.removeEventListener('keypress', keySpin)
+    }
+  })
+
   return (
     <div>
       <header>

@@ -1,9 +1,13 @@
 import React from "react";
 
-export const SlotReel = () =>{
+type Props = {
+    value: number
+}
+
+export const SlotReel = ({value}: Props) =>{
     return (
         <div>
-            This is a slot reel
+            {value}
         </div>
     )
 }
