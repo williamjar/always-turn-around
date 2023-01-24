@@ -3,7 +3,11 @@
 }
 
 
-body {background-color: rgb(31, 31, 31);}
+
+body {
+  font-size: 16px;
+  background-color: rgb(78, 78, 78);
+}
 
 h1 {
   color: aliceblue;
@@ -17,39 +21,170 @@ p {
   text-shadow: 5px 5px 10px 2px;
 }
 
-header{
-  border-bottom:5px solid #000000;
-  color:white;
-  background-color: #006969;
-  display: flex;
-  justify-content: space-between;
-}
-
-.site-title{
-  margin: auto;
-}
-
-.login-button{
-  margin: 10px;
+/* efault buttons */
+button{
+  margin: 0.5rem;
   border: 1px solid black;
   border-radius: 10%;
   color: white;
   background-color: #004d4d;
+  width: 7rem;
+  height: 2.5rem;
 }
+
+.button-container{
+  margin:0.5rem;
+  display: flex;
+  align-items: center;
+}
+/*-----------*/
+
+/* header content start */
+  /*content*/
+header{
+  border-radius: 0 0 0.2rem 0.2rem;
+  box-shadow: 0px 2px 10px #000000;
+  color:white;
+  background-color: #006969;
+  display: flex;
+  justify-content: space-evenly;
+}
+  /*-----------*/
+  
+  /* Title */
+.site-title{
+}
+  /*-----------*/
+
+
+  /* Buttons */
+.login-button-container{
+}
+
+.login-button{
+}
+
 .login-button:hover{
   background-color: #006969;
 }
-.nav-button{
-  color: #000000;
-  border: none;
-  margin: 10px;
+
+.signUp-button-container{
+
+}
+
+.signUp-button{
+  
+}
+
+.signUp-button:hover{
   background-color: #006969;
 }
-.nav-button:hover{
+
+.menu-button-container{
+}
+
+.menu-button{
+  color: #ffffff;
+  border: none;
+  background-color: #006969;
+}
+
+.menu-button:hover{
   color: #222222;
+}
+  /*-----------*/
+/*-----------*/
+
+
+/* layout start */
+.main{
+  display:flex;
+  justify-content: space-around;
+}
+
+.main-col{
+
+}
+/*-----------*/
+
+
+
+/* game content start*/
+
+#game-contianer {
+  margin: 50px;
+  background-color: #006969;
+  border: 5px solid black;
+  border-radius: 10px;
+  flex-direction: column;
+  
+}
+
+.game-screen {
+  margin: 100px;
+  margin-top: 50px;
+  margin-bottom: 0px;
+  align-self: center;
+  height: 600px;
+  width: 800px;
+  background-color: rgb(41, 41, 41);
+  border-radius: 10px;
+  border: 5px solid rgb(0, 0, 0);
+  
+}
+
+  /*slots start*/
+.slot-container {
+  display:flex;
+  justify-content: center;
+}
+
+.slot {
+  margin: 60px;
+  height: 200px;
+  width: 170px;
+  background-color: rgb(0, 42, 49);
+  border-radius: 10px;
+  box-shadow: inset 0 0 10px #000000;
+
+}
+
+.slot-text {
+  font-size: 100px;
+  color:rgb(168, 168, 168);
+  text-align: center;
+}
+  /*-----------*/
+
+  /*game messages*/
+.game-message-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+.credit-box {
+  width: 100px;
+  background-color: rgb(0, 83, 51);
+  border-radius: 10px;
 }
 
 
+
+.actions-box {
+  width: 200px;
+  height: 200px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 10px;
+}
+  /*-----------*/
+
+  /* draw button*/
+.draw-button-container {
+  display: flex;
+  justify-content:space-around;
+  margin: 50px;
+}
 
 .drawbutton {
   background-color: #a50000; /* Green */
@@ -69,78 +204,19 @@ header{
   background-color: #c90000;
 }
 
-.tokenbutton {
-  background-color: #c9b500; /* Green */
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  border-radius: 5%;
-  
-}
 
-.button-container {
-  display: flex;
-  justify-content:space-around;
-  margin: 50px;
-}
+  /*-----------*/
+/*-----------*/
 
-.game-screen {
-  margin: 100px;
-  margin-top: 50px;
-  margin-bottom: 0px;
-  align-self: center;
-  height: 600px;
-  width: 800px;
-  background-color: rgb(41, 41, 41);
-  border-radius: 10px;
-  border: 5px solid rgb(0, 0, 0);
-  
-}
 
-.game-message {
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-end;
-}
 
-.credit-box {
-  width: 100px;
-  background-color: rgb(0, 83, 51);
-  border-radius: 10px;
-}
 
-.slot-text {
-  font-size: 100px;
-  color:rgb(168, 168, 168);
-  text-align: center;
-}
 
-.actions-box {
-  width: 200px;
-  height: 200px;
-  background-color: rgb(0, 0, 0);
-  border-radius: 10px;
-}
 
-.slots {
-  display:flex;
-  justify-content: center;
-}
 
-.slot {
-  margin: 60px;
-  height: 200px;
-  width: 170px;
-  background-color: rgb(0, 42, 49);
-  border-radius: 10px;
-  box-shadow: inset 0 0 10px #000000;
 
-}
 
+/* gjør ingenting */
 .loader {
   width: 48px;
   height: 48px;
@@ -152,20 +228,22 @@ header{
   animation: rotation 1s linear infinite;
   }
 
+.tokenbutton {
+  background-color: #c9b500;
+  /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5%;
+  }
+/*-----------*/
 
-.game-container {
-  margin: 50px;
-  background-color: #006969;
-  border: 5px solid black;
-  border-radius: 10px;
-  flex-direction: column;
-  
-}
-.main-container{
-  display:flex;
-  justify-content: space-around;
-}
-.side-spacer{
-}
+
+
+
 
 

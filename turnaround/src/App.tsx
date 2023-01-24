@@ -116,32 +116,41 @@ function App() {
   return (
     <div>
       <header>
-        <button className='nav-button'>
+        <div className='menu-button-container button-container'>
+        <button type="button" className='menu-button'>
           <svg height="24px" viewBox="0 0 24 24" fill="none">
           <path d="M21.008 16c.537 0 .992.447.992.999v1.002a.992.992 0 01-.992.999H2.992C2.455 19 2 18.553 2 18.001v-1.002c0-.556.444-.999.992-.999h18.016zm0-6c.537 0 .992.447.992.999v1.002a.992.992 0 01-.992.999H2.992C2.455 13 2 12.553 2 12.001v-1.002c0-.556.444-.999.992-.999h18.016zm0-6c.537 0 .992.447.992.999v1.002a.992.992 0 01-.992.999H2.992C2.455 7 2 6.553 2 6.001V4.999C2 4.443 2.444 4 2.992 4h18.016z" fill="currentColor">
           </path></svg>
         </button>
-        <h2 className="site-title">It Can Always Turn Around</h2>
-        <Button text={"Logg inn"}/>
+        </div>
+        <h1 className="site-title">It Can Always Turn Around</h1>
+
+        <div className="button-container login-button-container"> 
+          <Button  text={"Log in"}/>
+        </div>
+        <div className="signUp-button-container button-container">
+          <Button text={"Sign up"}/>
+        </div>
       </header>
-      <div className="main-container">
-        <div className="side-spacer"></div>    
-        <div className="game-container">
+      <div className="main">
+        <div className="main-col"></div>
+
+        <div className="main-col" id="game-container">
           <div className="game-screen">
-            <div className="slots">
-              <div className="slot">
+            <div className="slot-container">
+              <div className="slot" id="slot-1">
                 <div className="slot-text">{slotString[0]}</div>
               </div>
-              <div className="slot">
+              <div className="slot" id="slot-2">
                 {' '}
                 <div className="slot-text">{slotString[1]}</div>
               </div>
-              <div className="slot">
+              <div className="slot" id="slot-3">
                 {' '}
                 <div className="slot-text">{slotString[2]}</div>
               </div>
             </div>
-            <div className="game-message">
+            <div className="game-message-container">
               <div className="credit-box">
                 <h1>{tokens}</h1>
               </div>
@@ -152,7 +161,7 @@ function App() {
               </div>
             </div>
           </div>
-          <div className="button-container">
+          <div className="draw-button-container ">
             <div className="side-spacer"></div>
             <div className="bandit">
               <button className="drawbutton" onClick={drawNumber}>
@@ -162,7 +171,8 @@ function App() {
             <div className="side-spacer"></div>
           </div>
         </div>
-        <div className="side-spacer"></div>
+      
+        <div className="main-col"></div>
       </div>
     </div>
   )
