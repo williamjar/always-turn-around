@@ -8,9 +8,9 @@ export const Slot = () => {
     return (
         <div className={'slot'}>
             <div className={'slotDisplay'}>
-                <SlotReel/>
-                <SlotReel/>
-                <SlotReel/>
+                {reels.map((r, v) => (
+                    <SlotReel key={v} value={r}/>
+                ))}
             </div>
             <SlotControls />
         </div>
