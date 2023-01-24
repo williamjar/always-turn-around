@@ -4,10 +4,12 @@ type Props = {
     value: number
 }
 
-export const SlotReel = ({value}: Props) =>{
+const SlotReel = ({value}: Props) =>{
     return (
         <div>
             {value}
         </div>
     )
 }
+
+export default SlotReel

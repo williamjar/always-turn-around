@@ -1,9 +1,20 @@
 import React from "react";
+import styles from './styles/slotControls.module.css'
 
-export const SlotControls = () => {
+type Props = {
+    onSpin: () => void,
+    betAmount: number,
+    balance: number
+}
+
+const SlotControls = (props: Props) => {
     return (
-        <div>
-            These are the slot controls
+        <div className={styles.slotControls}>
+            <div>Balance: {props.balance}</div>
+            <div onClick={props.onSpin}>SPIN!!!</div>
+            <div>Bet: {props.betAmount}</div>
         </div>
     )
 }
+
+export default SlotControls

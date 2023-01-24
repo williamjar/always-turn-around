@@ -1,0 +1,17 @@
+.slot{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.slotDisplay{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1em;
+
+    padding: 1em;
+    background-color: #a50000;
+    outline: none;
+
+}
