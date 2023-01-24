@@ -1,0 +1,39 @@
+  /* header content start */
+  /*content*/
+.header{
+box-shadow: 0px 2px 10px #000000;
+color:white;
+background-color: #132029;
+display: flex;
+justify-content: space-evenly;
+}
+  /*-----------*/
+  
+  /* Title */
+.title{
+  
+}
+.title-container{
+  display:flex;
+  align-items: center;
+} 
+/*-----------*/
+
+
+  /* Buttons */
+.button-container{
+  display:flex;
+  align-items: center;
+}
+
+#login-button-container{
+}
+
+#signUp-button-container{
+}
+
+#menu-button-container{
+}
+
+  /*-----------*/
+/*-----------*/

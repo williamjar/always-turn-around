@@ -1,6 +1,8 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useState, useEffect } from 'react'
 import './App.css'
 import {Button} from "./components/Button";
+import { Header } from './components/Header';
 
 function App() {
   const payOutRate = 0.95
@@ -115,23 +117,9 @@ function App() {
 
   return (
     <div>
-      <header>
-        <div className='menu-button-container button-container'>
-        <button type="button" className='menu-button'>
-          <svg height="24px" viewBox="0 0 24 24" fill="none">
-          <path d="M21.008 16c.537 0 .992.447.992.999v1.002a.992.992 0 01-.992.999H2.992C2.455 19 2 18.553 2 18.001v-1.002c0-.556.444-.999.992-.999h18.016zm0-6c.537 0 .992.447.992.999v1.002a.992.992 0 01-.992.999H2.992C2.455 13 2 12.553 2 12.001v-1.002c0-.556.444-.999.992-.999h18.016zm0-6c.537 0 .992.447.992.999v1.002a.992.992 0 01-.992.999H2.992C2.455 7 2 6.553 2 6.001V4.999C2 4.443 2.444 4 2.992 4h18.016z" fill="currentColor">
-          </path></svg>
-        </button>
-        </div>
-        <h1 className="site-title">It Can Always Turn Around</h1>
-
-        <div className="button-container login-button-container"> 
-          <Button  text={"Log in"}/>
-        </div>
-        <div className="signUp-button-container button-container">
-          <Button text={"Sign up"}/>
-        </div>
-      </header>
+      <div className='header'>
+        <Header/>
+      </div>
       <div className="main">
         <div className="main-col"></div>
 
