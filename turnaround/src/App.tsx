@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react'
 import './App.css'
 import {Button} from "./components/Button";
 import { Header } from './components/Header';
+import { SlotControls } from './components/SlotControls';
 
 function App() {
   const payOutRate = 0.95
@@ -41,7 +42,7 @@ function App() {
     return normalWin
   }
 
-  const drawNumber = () => {
+const drawNumber = () => {
     if (tokens <= 9) return false
 
     setTokens(tokens - 10)
@@ -162,17 +163,8 @@ function App() {
               </div>
             </div>
           </div>
-          <div className="draw-button-container ">
-            <div className="side-spacer"></div>
-            <div className="bandit">
-              <button className="drawbutton" onClick={drawNumber}>
-                SPIN
-              </button>
-            </div>
-            <div className="side-spacer"></div>
-          </div>
+          <SlotControls/>
         </div>
-      
         <div className="main-col"></div>
       </div>
     </div>

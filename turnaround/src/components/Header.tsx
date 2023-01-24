@@ -12,12 +12,10 @@ export const Header = () => {
             <div className='title-container'>
                 <h1 className="title">It Can Always Turn Around</h1>
             </div>
-            <div className="button-container" id="login-button-container"> 
-                <Button  text={"Log in"}/>
-            </div>
+            <div className='button-container user-buttons'>
+                    <Button text={"Sign up"}/>
 
-            <div className="button-container" id="signUp-button-container">
-                <Button text={"Sign up"}/>
+                    <Button text={"Log in"}/>
             </div>
         </div>
     )

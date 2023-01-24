@@ -10,7 +10,7 @@ body {
 }
 
 h1 {
-  color: aliceblue;
+  color: white;
   text-shadow: 5px 5px 10px 2px;
   text-align: center;
 }
@@ -34,7 +34,6 @@ p {
 
 /*header*/
 .header{
-
 }
 /*-----------*/
 
@@ -113,43 +112,7 @@ p {
   border-radius: 10px;
 }
   /*-----------*/
-
-  /* draw button*/
-.draw-button-container {
-  display: flex;
-  justify-content:space-around;
-  margin: 50px;
-}
-
-.drawbutton {
-  background-color: #a50000; /* Green */
-  border: 2px solid black;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 16px;
-  border-radius: 50%;
-  height: 200px;
-  width: 200px;
-  box-shadow: 5px 5px 10px 2px rgba(0,0,0,.8);
-  font-size: 25px;
-}
-.drawbutton:hover{
-  background-color: #c90000;
-}
-
-
-  /*-----------*/
 /*-----------*/
-
-
-
-
-
-
-
-
 
 /* gjør ingenting */
 .loader {

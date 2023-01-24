@@ -1,11 +1,14 @@
   /* header content start */
   /*content*/
 .header{
+margin:none;
 box-shadow: 0px 2px 10px #000000;
 color:white;
 background-color: #132029;
 display: flex;
-justify-content: space-evenly;
+align-items: center;
+justify-content: center;
+gap:13rem;
 }
   /*-----------*/
   
@@ -24,12 +27,15 @@ justify-content: space-evenly;
 .button-container{
   display:flex;
   align-items: center;
+  justify-content: center;
 }
 
-#login-button-container{
+.user-buttons{
+}
+.login-button-container{
 }
 
-#signUp-button-container{
+.signUp-button-container{
 }
 
 #menu-button-container{
