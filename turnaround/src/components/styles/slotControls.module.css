@@ -1,5 +1,58 @@
-.slotControls{
+.slotControls {
     display: flex;
-    flex-direction: row;
-    gap: 1em;
-}
+    justify-content:space-around;
+    align-items: center;
+    margin: 2em;
+    border: 1px solid black;
+  }
+
+  .drawButton {
+    background-color: #a50000; /* Green */
+    border: 1px solid black;
+    color: white;
+    padding: 2em 2em;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    height: 8em;
+    width: 8em;
+    box-shadow: 0px 0px 5px 2px rgba(0,0,0,.8);
+    font-size: 25px;
+    cursor: pointer;
+    transition: .25s;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+  .drawButton:hover{
+    background-color: #c90000;
+  }
+
+  .balance{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 2em 2em;
+    height: 6em;
+    width: 6em;
+    border:1px solid black;
+    background-color: #c90000;
+  }
+
+  .betAmmount{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 2em 2em;
+    height: 6em;
+    width: 6em;
+    border:1px solid black;
+    background-color: #c90000;
+  }

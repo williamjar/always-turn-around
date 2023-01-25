@@ -114,6 +114,10 @@ p {
   /*-----------*/
 /*-----------*/
 
+.surfers{
+  margin: 2rem;
+}
+
 /* gjør ingenting */
 .loader {
   width: 48px;

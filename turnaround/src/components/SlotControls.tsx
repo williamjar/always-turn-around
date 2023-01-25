@@ -10,9 +10,9 @@ type Props = {
 const SlotControls = (props: Props) => {
     return (
         <div className={styles.slotControls}>
-            <div>Balance: {props.balance}</div>
-            <div onClick={props.onSpin}>SPIN!!!</div>
-            <div>Bet: {props.betAmount}</div>
+            <div className={styles.balance}><h3>Balance: {props.balance}</h3></div>
+            <div className={styles.drawButton} onClick={props.onSpin}><h3>SPIN!!!</h3></div>
+            <div className={styles.betAmmount}><h3>Bet: {props.betAmount}</h3></div>
         </div>
     )
 }

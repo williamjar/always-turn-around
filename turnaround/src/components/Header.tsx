@@ -1,6 +1,6 @@
 import styles from './styles/header.module.css'
 import React from "react";
-import { Button } from './Button';
+import  Button  from './Button';
 import { MenuButton } from './MenuButton';
 
 export const Header = () => {
