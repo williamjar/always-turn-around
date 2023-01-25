@@ -1,5 +1,21 @@
 .slotControls{
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
     gap: 1em;
+    user-select: none;
+
+    height: 100px;
+}
+
+.balance {
+
+}
+
+.spin {
+    cursor: pointer;
+}
+
+.bet {
+
 }

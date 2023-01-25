@@ -1,0 +1,7 @@
+.slotReel {
+    padding: 2em 4em;
+}
+
+.slotReel + .slotReel {
+    border-left: 1px solid black;
+}

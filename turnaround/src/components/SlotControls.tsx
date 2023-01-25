@@ -11,7 +11,7 @@ const SlotControls = (props: Props) => {
     return (
         <div className={styles.slotControls}>
             <div>Balance: {props.balance}</div>
-            <div onClick={props.onSpin}>SPIN!!!</div>
+            <div className={styles.spin} onClick={props.onSpin}>SPIN!!!</div>
             <div>Bet: {props.betAmount}</div>
         </div>
     )

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
-import '../App.css'
-import Button  from "../components/Button";
+import '../../App.css'
+import Button  from "../../components/Button";
 
 function HomePage() {
     const payOutRate = 0.95

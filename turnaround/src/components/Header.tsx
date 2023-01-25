@@ -1,9 +1,9 @@
 import styles from './styles/header.module.css'
 import React from "react";
-import { Button } from './Button';
+import Button from './Button';
 import { MenuButton } from './MenuButton';
 
-export const Header = () => {
+const Header = () => {
     return (
         <div className={styles.header}>
             <div className='button-container' id="menu-button-container">
@@ -20,3 +20,5 @@ export const Header = () => {
         </div>
     )
 }
+
+export default Header

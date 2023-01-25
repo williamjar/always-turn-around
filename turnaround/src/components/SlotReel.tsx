@@ -1,4 +1,6 @@
 import React from "react";
+import styles from './styles/slotReel.module.css'
+
 
 type Props = {
     value: number
@@ -6,7 +8,7 @@ type Props = {
 
 const SlotReel = ({value}: Props) =>{
     return (
-        <div>
+        <div className={styles.slotReel}>
             {value}
         </div>
     )
