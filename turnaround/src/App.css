@@ -86,9 +86,19 @@ p {
   margin:none;
   font-size: 100px;
   color:rgb(168, 168, 168);
-  text-align: center;
+  text-align: center;}
+=======
+
+
+
+.credit-box {
+  margin:2%;
+  padding: 5%;
+  background-color: rgb(0, 83, 51);
+  border-radius: 5px;
 }
   /*-----------*/
+
 
   /*game messages*/
 .game-message-container {
@@ -143,9 +153,3 @@ p {
   border-radius: 5%;
   }
 /*-----------*/
-
-
-
-
-
-
