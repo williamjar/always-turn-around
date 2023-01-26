@@ -134,7 +134,7 @@ function HomePage() {
             </header>
             <div className="main">
                 <div className="main-col">
-                    <iframe className="surfers" width="315" height="1200" src="https://www.youtube.com/embed/ChBg4aowzX8?autoplay=1" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+                    <iframe className="surfers" width="315" height="1200" src="https://www.youtube.com/watch?v=LN_OJIsheyk?autoplay=1" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
                 </div>
 
                 <div className="main-col" id="game-container">
@@ -166,7 +166,7 @@ function HomePage() {
                     <SlotControls onSpin={drawNumber} betAmount={100} balance={tokens}/>
                 </div>
 
-                <div className="main-col"><iframe className="surfers" width="315" height="1200" src="https://www.youtube.com/embed/ChBg4aowzX8?autoplay=1" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe></div>
+                <div className="main-col"><iframe className="surfers" width="315" height="1200" src="https://www.youtube.com/watch?v=LN_OJIsheyk?autoplay=1" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe></div>
             </div>
         </div>
     )
