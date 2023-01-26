@@ -1,7 +1,16 @@
-body {background-color: rgb(31, 31, 31);}
+*,*::before,*::after{
+  box-sizing: border-box;
+}
+
+
+
+body {
+  font-size: 16px;
+  background-color: #1a2c38;
+}
 
 h1 {
-  color: aliceblue;
+  color: white;
   text-shadow: 5px 5px 10px 2px;
   text-align: center;
 }
@@ -12,24 +21,128 @@ p {
   text-shadow: 5px 5px 10px 2px;
 }
 
-.drawbutton {
-  background-color: #004d4d; /* Green */
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  border-radius: 50%;
-  height: 200px;
-  width: 200px;
-  box-shadow: 5px 5px 10px 2px rgba(0,0,0,.8);
-  font-size: 25px;
+/* layout start */
+.main{
+  display:flex;
+  justify-content: space-around;
 }
 
+.main-col{
+
+}
+/*-----------*/
+
+/*header*/
+.header{
+}
+/*-----------*/
+
+
+/* game content start*/
+
+#game-container {
+  margin-top: 50px;
+  height: 70rem;
+  background-color: #132029;
+  box-shadow: 0 0 10px black;
+  
+}
+
+.game-screen {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  align-self: center;
+  height: 30rem;
+  width: 50rem;
+  /*
+  background-color: rgb(41, 41, 41);
+  border-radius: 10px;
+  border: 5px solid rgb(0, 0, 0);
+  */
+}
+
+  /*slots start*/
+.slot-container {
+  display:flex;
+  justify-content: center;
+}
+
+.slot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2em;
+  height: 10em;
+  width: 10em;
+  padding: none;
+  background-color: rgb(0, 42, 49);
+  border-radius: 10px;
+  box-shadow: inset 0 0 10px #000000;
+
+}
+
+.slot-text {
+  padding: none;
+  margin:none;
+  font-size: 100px;
+  color:rgb(168, 168, 168);
+  text-align: center;}
+=======
+
+
+
+.credit-box {
+  margin:2%;
+  padding: 5%;
+  background-color: rgb(0, 83, 51);
+  border-radius: 5px;
+}
+  /*-----------*/
+
+
+  /*game messages*/
+.game-message-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.credit-box {
+  width: 100px;
+  background-color: rgb(0, 83, 51);
+  border-radius: 10px;
+}
+
+
+
+.actions-box {
+  width: 200px;
+  height: 200px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 10px;
+}
+  /*-----------*/
+/*-----------*/
+
+.surfers{
+  margin: 2rem;
+}
+
+/* gjør ingenting */
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 5px solid #FFF;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+  }
+
 .tokenbutton {
-  background-color: #c9b500; /* Green */
+  background-color: #c9b500;
+  /* Green */
   border: none;
   color: white;
   padding: 15px 32px;
@@ -38,65 +151,5 @@ p {
   display: inline-block;
   font-size: 16px;
   border-radius: 5%;
-  
-}
-
-
-.top-container {
-  align-self: center;
-}
-
-.game-screen {
-  margin:5%;
-  background-color: rgb(41, 41, 41);
-  box-shadow: 5px 5px 10px 2px rgba(0,0,0,.8);
-  border-radius: 5px;
-  border: 10px solid rgb(0, 0, 0);
-}
-
-.game-message {
-  margin:2%;
-  padding:2%;
-  border-radius: 5px;
-}
-
-.credit-box {
-  margin:2%;
-  padding: 5%;
-  background-color: rgb(0, 83, 51);
-  border-radius: 5px;
-}
-
-.slot-text {
-  font-size: 10rem;
-  color:rgb(168, 168, 168);
-  text-align: center;
-}
-
-.actions-box {
-  background-color: rgb(0, 0, 0);
-  border-radius: 10%;
-}
-
-.slots {
-  margin:2%;
-  display:flex;
-  justify-content: center;
-}
-
-.slot {
-  margin:2%;
-  width: 25%;
-  height:25%;
-  background-color: rgb(0, 42, 49);
-  border-radius: 10px;
-  box-shadow: inset 0 0 10px #000000;
-}
-
-.main-container {
-  display:flex;
-  flex-direction: column; 
-  
-}
-
-
+  }
+/*-----------*/

@@ -1,0 +1,45 @@
+  /* header content start */
+  /*content*/
+.header{
+margin:none;
+box-shadow: 0px 2px 10px #000000;
+color:white;
+background-color: #132029;
+display: flex;
+align-items: center;
+justify-content: center;
+gap:13rem;
+}
+  /*-----------*/
+  
+  /* Title */
+.title{
+  
+}
+.title-container{
+  display:flex;
+  align-items: center;
+} 
+/*-----------*/
+
+
+  /* Buttons */
+.button-container{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-buttons{
+}
+.login-button-container{
+}
+
+.signUp-button-container{
+}
+
+#menu-button-container{
+}
+
+  /*-----------*/
+/*-----------*/
