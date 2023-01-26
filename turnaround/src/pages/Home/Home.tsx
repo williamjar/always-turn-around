@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react'
 import '../../App.css'
-import '../App.css'
 import {Header} from "../components/Header"
 import SlotControls from '../components/SlotControls'
 
